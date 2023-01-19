@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "jquery": "^3.6.3",
+    "swiper": "^8.4.4"
+  }
+}
