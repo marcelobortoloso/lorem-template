@@ -1,5 +1,5 @@
-$(".brands").slick({
-  slidesToShow: 5,
+$(".pacote").slick({
+  slidesToShow: 3,
   slidesToScroll: 1,
   dots: false,
   arrows: true,
@@ -12,4 +12,14 @@ $(".blog").slick({
   dots: false,
   arrows: true,
   infinite: true,
+});
+
+$(".brands").slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  dots: false,
+  arrows: true,
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 3000,
 });

@@ -4,12 +4,44 @@ body {
   font-weight: 600 !important;
 }
 
+ul {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
 .row {
   margin: 0;
 }
 
 .container {
   padding: 70px 0;
+}
+
+/* TOP */
+.top-container {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  background-color: #192945;
+  justify-content: end;
+}
+
+.top {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 20px;
+  margin-right: 300px;
+}
+
+.top p,
+.top a {
+  text-decoration: none;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 17px !important;
+  color: #ffffff;
+  margin-bottom: 0px;
 }
 
 /* NAVBAR */
@@ -26,6 +58,10 @@ header,
 #nav-container {
   padding-top: 0;
   padding-bottom: 0;
+}
+
+.navbar-nav {
+  align-items: center;
 }
 
 .navbar-brand {
@@ -83,10 +119,18 @@ header,
   height: 130px;
   justify-content: space-evenly;
   padding: 30px;
-
   background-color: #ffffff;
   border-radius: 16px;
   box-shadow: 0px 1px 5px 1px black;
+}
+
+.box-filtro {
+  position: relative;
+}
+
+.box-filtro img {
+  position: absolute;
+  z-index: 99999;
 }
 
 #botao-pesquisa {
@@ -154,9 +198,11 @@ h2::after {
 .txt-pacote {
   display: flex;
   flex-direction: column;
+  /* align-items: center; */
   width: 400px;
-  height: 600px;
+  height: 340px;
   background-color: #ffffff;
+  padding: 30px;
 }
 
 .txt-pacote h4 {
@@ -164,8 +210,6 @@ h2::after {
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
-  margin-top: 25px;
-  margin-left: 27px;
 }
 
 .desc-pacote {
@@ -173,6 +217,7 @@ h2::after {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  margin-bottom: 26px;
 }
 
 .txt-pacote li {
@@ -184,7 +229,59 @@ h2::after {
 
 .txt-pacote ul {
   padding: 0;
-  margin-left: 63px;
+  margin-left: 45px !important;
+  margin-bottom: 16px !important;
+}
+
+.linha-txt {
+  width: 100%;
+  height: 1px;
+  border: 1px solid #e5e5e5;
+}
+
+.valor-pacote {
+  display: flex;
+  margin-top: 12px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.local {
+  display: flex;
+  align-items: center;
+  width: 80px;
+  height: 30px;
+  gap: 13px;
+}
+
+.local img {
+  width: 15px;
+  height: 12px;
+  object-fit: contain;
+}
+
+.local p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0px;
+  color: #000;
+}
+
+.preco {
+  color: #4688f2;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  margin: 0px;
+}
+
+.pacote .slick-list {
+  height: 105%;
+}
+
+.pacote .slick-next {
+  right: 45px !important;
 }
 
 /* NOSSAS ATIVIDADES */
@@ -458,9 +555,20 @@ textarea::placeholder {
   height: 120px;
 }
 
+.logo a {
+  display: flex;
+  width: 185px;
+  margin: auto;
+}
+
 #brands-container img {
   height: 111px;
   margin: auto;
+  filter: opacity(30%);
+}
+
+#brands-container img:hover {
+  filter: opacity(100%);
 }
 
 .blog .slick-list {
