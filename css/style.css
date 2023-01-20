@@ -52,7 +52,7 @@ header,
 
 #logo {
   width: 220px;
-  height: 48px;
+  height: auto;
 }
 
 #nav-container {
